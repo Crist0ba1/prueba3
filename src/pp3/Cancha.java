@@ -27,7 +27,7 @@ public class Cancha {
         return this.horario[hora];
     }
     public void horarioCancha(){
-        System.out.println("Recerbas de hoy");
+        System.out.println("Recerbas de canchas de hoy");
         System.out.println("Horario de oficina");
         for(int i=8; i<18; i++){
             if (horario[i]){
