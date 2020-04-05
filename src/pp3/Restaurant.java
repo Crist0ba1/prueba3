@@ -12,7 +12,7 @@ package pp3;
 public class Restaurant {
     int costo;
     
-    public Restaurant(int Costo){
+    public Restaurant(int costo){
         this.costo = costo;
     }
     
@@ -29,8 +29,8 @@ public class Restaurant {
     }
 
     public int descuento(){
-        double porcentaje = this.costo*0.1;
-        return (this.costo - (int)porcentaje);
+        int porcentaje = this.costo/100*10;
+        return this.costo - porcentaje;
         
     }
 }
