@@ -62,13 +62,23 @@ public class Cancha {
     }
     public int costoCancha(int dia, int hora){
         int costo;
-        if(dia <6){
-            if (hora<18){costo = 5000; }
-            else{ costo = 4000;}
+        if(dia >0 && dia <6){
+            if (hora > 7 && hora<18){
+                costo = 5000; 
+            }
+            else if(hora>=18 && hora<24){ 
+                costo = 4000;
+            }
+            else{ costo = 0;}
         }
         else{
-            if (hora<18){costo = 7000; }
-            else{ costo = 6000;}
+            if (hora > 7 && hora<18){
+                costo = 7000; 
+            }
+            else if(hora>=18 && hora<24){ 
+                costo = 6000;
+            }
+            else{ costo = 0;}
         }
         return costo;
         

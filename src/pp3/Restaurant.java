@@ -20,8 +20,7 @@ public class Restaurant {
         this.costo = costo;
     }
     public void setDeuda(String rut, Counter ini){
-        double porcentaje = this.costo*0.1;
-        int multa = this.costo - (int)porcentaje;
+        int multa = descuento();
         ini.cargarMulta(rut, multa);
     }
     
@@ -29,6 +28,9 @@ public class Restaurant {
     
     }
 
-    public void descuento(){
+    public int descuento(){
+        double porcentaje = this.costo*0.1;
+        return (this.costo - (int)porcentaje);
+        
     }
 }
