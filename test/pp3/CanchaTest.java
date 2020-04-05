@@ -36,6 +36,7 @@ public class CanchaTest {
     @After
     public void tearDown() {
     }
+    // no me sube el contenido al git
     // todos parten en true
     @Test
     public void testComprobarCancha() {
