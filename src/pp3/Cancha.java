@@ -71,7 +71,7 @@ public class Cancha {
             }
             else{ costo = 0;}
         }
-        else{
+        else if(dia < 8){
             if (hora > 7 && hora<18){
                 costo = 7000; 
             }
@@ -80,6 +80,7 @@ public class Cancha {
             }
             else{ costo = 0;}
         }
+        else{costo = 0;}
         return costo;
         
         

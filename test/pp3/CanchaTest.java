@@ -86,5 +86,14 @@ public class CanchaTest {
         int expResult = 7000;
         int result = instance.costoCancha(dia, hora);
         assertEquals(expResult, result);
-    }    
+    }
+    public void testCostoCancha3() {
+        System.out.println("costoCancha");
+        int dia = 9;
+        int hora = 13;
+        Cancha instance = new Cancha();
+        int expResult = 0;
+        int result = instance.costoCancha(dia, hora);
+        assertEquals(expResult, result);
+    }     
 }
